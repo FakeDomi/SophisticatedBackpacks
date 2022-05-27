@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.p3pp3rf1y.sophisticatedbackpacks.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "sophisticatedbackpacks.refmap.json",
+  "mixins": [
+    "create.ContraptionInvWrapperMixin",
+    "create.MountedStorageMixin"
+  ],
+  "client": [
+  ],
+  "minVersion": "0.8"
+}

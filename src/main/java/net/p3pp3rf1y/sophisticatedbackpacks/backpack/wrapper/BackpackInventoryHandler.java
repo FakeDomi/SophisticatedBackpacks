@@ -9,9 +9,15 @@ import net.p3pp3rf1y.sophisticatedbackpacks.upgrades.inception.InceptionUpgradeI
 import net.p3pp3rf1y.sophisticatedcore.api.IStorageWrapper;
 import net.p3pp3rf1y.sophisticatedcore.inventory.InventoryHandler;
 
+import java.util.Objects;
+
 public class BackpackInventoryHandler extends InventoryHandler {
 	public BackpackInventoryHandler(int numberOfInventorySlots, IStorageWrapper storageWrapper, CompoundTag contentsNbt, Runnable saveHandler, int slotLimit) {
 		super(numberOfInventorySlots, storageWrapper, contentsNbt, saveHandler, slotLimit, Config.COMMON.stackUpgrade);
+	}
+
+	public BackpackWrapper getBackpackWrapper() {
+		return Objects.requireNonNull((BackpackWrapper) this.storageWrapper);
 	}
 
 	@Override
